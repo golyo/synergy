@@ -16,9 +16,33 @@ jhipsterApp
                 })
                .when('/test', {
                     templateUrl: 'views/test.html',
-                    access: {
-                        authorizedRoles: [USER_ROLES.all]
-                    }
+                })
+               .when('/creditPetition', {
+                    templateUrl: 'views/creditPetition.html'
+                })
+               .when('/firmInstitution', {
+                    templateUrl: 'views/firmInstitution.html'
+                })
+               .when('/audit', {
+                    templateUrl: 'views/audit.html'
+                })
+               .when('/consultancy', {
+                    templateUrl: 'views/consultancy.html'
+                })
+               .when('/tender', {
+                    templateUrl: 'views/tender.html'
+                })
+               .when('/training', {
+                    templateUrl: 'views/training.html'
+                })
+                .when('/estimate', {
+                    templateUrl: 'views/estimate.html'
+                })
+                .when('/referencies', {
+                    templateUrl: 'views/referencies.html'
+                })
+                .when('/actualCredit', {
+                    templateUrl: 'views/actualCredit.html'
                 })
                 .otherwise({
                     templateUrl: 'views/main.html',
@@ -34,7 +58,7 @@ jhipsterApp
                 suffix: '.json'
             });
 
-            $translateProvider.preferredLanguage('en');
+            $translateProvider.preferredLanguage('hu');
 
             $translateProvider.useCookieStorage();
 
@@ -44,7 +68,14 @@ jhipsterApp
         .run(function($rootScope, $location, $http, Session, USER_ROLES) {
                 $rootScope.authenticated = true;
 				$rootScope.userRoles = USER_ROLES;
+				$(".view-frame").on('oTransitionEnd', function( event ) { 
+					alert( "Finished transition!" ); 
+				});
                 $rootScope.$on('$routeChangeStart', function (event, next) {
-                	$rootScope.transitionState="active";
+                	console.log("start");
                 });
+                $rootScope.$on('$locationChangeSuccess', function (event, next) {
+                	console.log("succes");
+                });
+                
         });

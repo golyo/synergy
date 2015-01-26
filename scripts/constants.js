@@ -20,6 +20,7 @@ jhipsterApp.constant('LANGUAGES', {
         'fr': 'French',
         'de': 'German',
         'kr': 'Korean',
+        'hu': 'Magyar',
         'pl': 'Polish',
         'pt-br': 'Portuguese (Brazilian)',
         'ru': 'Russian',

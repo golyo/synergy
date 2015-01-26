@@ -32,6 +32,10 @@ body { /* Addresses a small issue in webkit: http://bit.ly/NEdoDq */
 	        animation-duration: 2s;
 }
 
+.panel-collapse {
+	background-color: white;
+	opacity: 1;
+}
 @-webkit-keyframes flash {
 	0%, 50%, 100% {opacity: 1;}	
 	25%, 75% {opacity: 0;}
@@ -2486,7 +2490,7 @@ body { /* Addresses a small issue in webkit: http://bit.ly/NEdoDq */
 	100% {
 		-webkit-transform-origin: left bottom;
 		-webkit-transform: rotate(0);
-		opacity: 1;
+		opacity: 0.9;
 	}
 }
 
@@ -2500,7 +2504,7 @@ body { /* Addresses a small issue in webkit: http://bit.ly/NEdoDq */
 	100% {
 		-moz-transform-origin: left bottom;
 		-moz-transform: rotate(0);
-		opacity: 1;
+		opacity: 0.9;
 	}
 }
 
@@ -2514,7 +2518,7 @@ body { /* Addresses a small issue in webkit: http://bit.ly/NEdoDq */
 	100% {
 		-o-transform-origin: left bottom;
 		-o-transform: rotate(0);
-		opacity: 1;
+		opacity: 0.9;
 	}
 }
 
@@ -2528,7 +2532,7 @@ body { /* Addresses a small issue in webkit: http://bit.ly/NEdoDq */
 	100% {
 		transform-origin: left bottom;
 		transform: rotate(0);
-		opacity: 1;
+		opacity: 0.9;
 	}
 }
 
@@ -2790,7 +2794,7 @@ body { /* Addresses a small issue in webkit: http://bit.ly/NEdoDq */
 	0% {
 		-webkit-transform-origin: left bottom;
 		-webkit-transform: rotate(0);
-		opacity: 1;
+		opacity: 0.9;
 	}
 	
 	100% {
@@ -2804,7 +2808,7 @@ body { /* Addresses a small issue in webkit: http://bit.ly/NEdoDq */
 	0% {
 		-moz-transform-origin: left bottom;
 		-moz-transform: rotate(0);
-		opacity: 1;
+		opacity: 0.9;
 	}
 	
 	100% {
@@ -2818,7 +2822,7 @@ body { /* Addresses a small issue in webkit: http://bit.ly/NEdoDq */
 	0% {
 		-o-transform-origin: left bottom;
 		-o-transform: rotate(0);
-		opacity: 1;
+		opacity: 0.9;
 	}
 	
 	100% {
@@ -2832,7 +2836,7 @@ body { /* Addresses a small issue in webkit: http://bit.ly/NEdoDq */
 	0% {
 		transform-origin: left bottom;
 		transform: rotate(0);
-		opacity: 1;
+		opacity: 0.9;
 	}
 	
 	100% {

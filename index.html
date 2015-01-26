@@ -6,7 +6,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>jhipster</title>
+        <title>Synergy-KLM Kft.</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
@@ -30,80 +30,64 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                  <a class="navbar-brand" href="#"><span translate="global.title">jhipster</span></a>
+                  <a class="navbar-brand" href="#"><span translate="global.title">Synergy-KLM Kft.</span></a>
                 </div>
                 <div class="collapse navbar-collapse" id="navbar-collapse" active-menu>
                     <ul class="nav navbar-nav nav-pills navbar-right">
-                        <li>
+                        <li class="active">
                             <a href="#">
                                 <span class="glyphicon glyphicon-home"></span>
-                                <span translate="global.menu.home">Home</span>
+                                <span>Fő oldal</span>
                             </a>
                         </li>
                         <li class="dropdown pointer">
                             <a class="dropdown-toggle" data-toggle="dropdown" href="javascript:;">
                                 <span>
                                     <span class="glyphicon glyphicon-th-list"></span>
-                                    <span class="hidden-tablet" translate="global.menu.entities.main">
-                                        Entities
+                                    <span class="hidden-tablet">
+                                        Tevékenységek
                                     </span>
                                     <b class="caret"></b>
                                 </span>
                             </a>
                             <ul class="dropdown-menu" ng-controller="MenuController">
-                                <!-- JHipster will add entities to the menu here -->
+                                <li><a href="#/creditPetition"><span class="glyphicon glyphicon-wrench"></span>
+                                    &nbsp;<span>A banki hitelígérvény megszerzése, a hitelkérelem elkészítése</span></a></li>
+                                <li><a href="#/firmInstitution"><span class="glyphicon glyphicon-lock"></span>
+                                    &nbsp;<span">Cégalapítás, cégátalakítás, cégátvilágítás</span></a></li>
+                                <li><a href="#/audit"><span class="glyphicon glyphicon-cloud"></span>
+                                    &nbsp;<span>Könyvvizsgálat, a könyvelés ellenőrzése</span></a></li>
+                                <li><a href="#/consultancy"><span class="glyphicon glyphicon-log-out"></span>
+                                    &nbsp;<span>Pénzügyi, számviteli- és üzletviteli tanácsadás</span></a></li>
+                                <li><a href="#/tender"><span class="glyphicon glyphicon-log-in"></span>
+                                    &nbsp;<span>Pályázatok készítése, menedzselése- és figyelése</span></a></li>
+                                <li><a href="#/training"><span class="glyphicon glyphicon-plus-sign"></span>
+                                    &nbsp;<span>Oktatás, tréning szervezése a sikeres hitelkérelem- és pályázat elkészítéséhez</span></a></li>
+                                <li><a href="#/estimate"><span class="glyphicon glyphicon-plus-sign"></span>
+                                    &nbsp;<span>Vagyon- és üzletrész értékbecslés</span></a></li>
                             </ul>
                         </li>
-                        <li class="dropdown pointer">
-                            <a class="dropdown-toggle" data-toggle="dropdown" href="javascript:;">
-                                <span>
-                                    <span class="glyphicon glyphicon-user"></span>
-                                    <span class="hidden-tablet" translate="global.menu.account.main">
-                                        Account
-                                    </span>
-                                    <b class="caret"></b>
-                                </span>
+                        <li>
+                            <a href="#/referencies">
+                                <span class="glyphicon glyphicon-home"></span>
+                                <span>Referenciák</span>
                             </a>
-                            <ul class="dropdown-menu" ng-controller="MenuController">
-                                <li><a href="#/test"><span class="glyphicon glyphicon-wrench"></span>
-                                    &nbsp;<span translate="global.menu.account.settings">Settings</span></a></li>
-                                <li><a href="#/password"><span class="glyphicon glyphicon-lock"></span>
-                                    &nbsp;<span translate="global.menu.account.password">Password</span></a></li>
-                                <li><a href="#/sessions"><span class="glyphicon glyphicon-cloud"></span>
-                                    &nbsp;<span translate="global.menu.account.sessions">Sessions</span></a></li>
-                                <li><a href="#/logout"><span class="glyphicon glyphicon-log-out"></span>
-                                    &nbsp;<span translate="global.menu.account.logout">Log out</span></a></li>
-                                <li><a href="#/login"><span class="glyphicon glyphicon-log-in"></span>
-                                    &nbsp;<span translate="global.menu.account.login">Authenticate</span></a></li>
-
-                                <li><a href="#/register"><span class="glyphicon glyphicon-plus-sign"></span>
-                                    &nbsp;<span translate="global.menu.account.register">Register</span></a></li>
-                            </ul>
                         </li>
-                        <li class="dropdown pointer" ng-controller="LanguageController">
-                            <a class="dropdown-toggle" data-toggle="dropdown" href="javascript:;">
-                                <span>
-                                    <span class="glyphicon glyphicon-flag"></span>
-                                    <span class="hidden-tablet" translate="global.menu.language">Language</span>
-                                    <b class="caret"></b>
-                                </span>
+                        <li>
+                            <a href="#/actualCredit">
+                                <span class="glyphicon glyphicon-home"></span>
+                                <span>Hitelfigyelés</span>
                             </a>
-                            <ul class="dropdown-menu">
-                                <li active-menu="{{key}}" ng-repeat="(key, language) in languages">
-                                    <a href="javascript:;" ng-click="changeLanguage(key)">{{language}}</a>
-                                </li>
-                            </ul>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
-        <div class="container view-container">
+        <div class="container mainContent">
 			<div class="view-frame" ng-view=""></div>
-
-            <div class="footer {{viewState}}">
-                <p translate="footer">This is your footer</p>
-            </div>
+			<div class="footer">
+			    This is your footer
+			</div>
         </div>
 
         <!-- Google Analytics: uncomment and change UA-XXXXX-X to be your site's ID.

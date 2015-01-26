@@ -1,7 +1,61 @@
 body {
-    background: #fafafa;
+	background-image: url("../images/Light-Wood-Background.jpg");
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #333;
+}
+
+.quoteContainer, .footer, .modal-footer {
+	padding: 5px 15px;
+	margin-bottom: 10px;
+  	background: -webkit-linear-gradient(#ddd, #aaa); /* For Safari 5.1 to 6.0 */
+ 	background: -o-linear-gradient(#ddd, #aaa); /* For Opera 11.1 to 12.0 */
+ 	background: -moz-linear-gradient(#ddd, #aaa); /* For Firefox 3.6 to 15 */
+  	background: linear-gradient(#ddd, #aaa); /* Standard syntax */
+	border-color: #ccc;
+	border-radius: 5px;
+}
+.footer {
+	z-index: 1000;
+	border-radius: 0px 0px 10px 10px;
+}
+.modal-content {
+	border-radius: 10px;
+}
+.modal-header {
+	border-radius: 10px 10px 0px 0px;
+}
+.modal-footer {
+	margin-bottom: 0px;
+}
+.modal-dialog {
+	z-index: 1060;
+	position: relative;
+}
+.quote {
+	font-size: 16px;
+	font-style: italic;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	color: #222;
+	max-width: 600px;
+/*	color: #8c6e33;*/
+}
+.downloads {
+	font-size: 1em;
+}
+
+.downloads a {
+	margin-left: 20px;
+}
+.important {
+	font-weight: bold;
+	text-decoration: underline;
+	text-align: center;
+}
+.view-frame {
+	padding: 20px;
+	border-radius: 10px 10px 0px 0px;
+	background: white;
+	opacity: 0.9;
 }
 
 .development {
@@ -80,20 +134,20 @@ only screen and (                min-resolution: 2dppx) {
 .voffset8 { margin-top: 100px; }
 .voffset9 { margin-top: 150px; }
 
-.container {
-	position:relative;
-}
-
 div[ng-view].ng-enter {
-    -webkit-animation: rotateInDownLeft 1s;
-    animation: rotateInDownLeft 1s;
+    -webkit-animation: rotateInDownLeft 0.5s;
+    animation: rotateInDownLeft 0.5s;
 }
-
+div[ng-view] {
+	position: relative;
+}
+/*
 div[ng-view].ng-leave {
 	position: absolute;
-    -webkit-animation: rotateOutDownLeft 1s;
-    animation: rotateOutDownLeft 1s;
+    -webkit-animation: rotateOutDownLeft 0.8s;
+    animation: rotateOutDownLeft 0.8s;
 }
+*/
 .lead, .aaa {
     text-shadow: 10px 10px 10px #AAA;
 }
@@ -119,7 +173,7 @@ div[ng-view].ng-leave {
 	*/
 }
 
-.navbar-default {
+.navbar-default, .panel-heading, .modal-header {
   background: -webkit-linear-gradient(#d73146, #961d2c); /* For Safari 5.1 to 6.0 */
   background: -o-linear-gradient(#d73146, #961d2c); /* For Opera 11.1 to 12.0 */
   background: -moz-linear-gradient(#d73146, #961d2c); /* For Firefox 3.6 to 15 */
@@ -127,7 +181,7 @@ div[ng-view].ng-leave {
 	border-color: #db542d;
 }
 
-.navbar-default .navbar-brand {
+.navbar-default .navbar-brand, .panel-heading .panel-title, .modal-header .modal-title {
 	color: #ecf0f1;
 }
 .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
@@ -150,7 +204,7 @@ div[ng-view].ng-leave {
 	color: #fef1f8;
 	background-color: #981038;
 }
-.navbar-default .navbar-toggle {
+.navbar-default .navbar-toggle, .panel-heading {
 	border-color: #d57180;
 }
 .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
@@ -183,4 +237,10 @@ div[ng-view].ng-leave {
 	}
 }
 
+.three-dee{
+line-height: 1em;
+color: #8c6e33;
+font-size: 50px;
+text-shadow:0px 0px 0 rgb(116,86,27),1px 1px 0 rgb(101,71,12),2px 2px 0 rgb(87,57,-2),3px 3px 0 rgb(72,42,-17),4px 4px 0 rgb(58,28,-31),5px 5px 0 rgb(43,13,-46), 6px 6px 0 rgb(29,-1,-60),7px 7px 6px rgba(0,0,0,0.6),7px 7px 1px rgba(0,0,0,0.5),0px 0px 6px rgba(0,0,0,.2);
+}
 
