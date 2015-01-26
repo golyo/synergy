@@ -67,15 +67,9 @@ jhipsterApp
         })
         .run(function($rootScope, $location, $http, Session, USER_ROLES) {
                 $rootScope.authenticated = true;
-				$rootScope.userRoles = USER_ROLES;
-				$(".view-frame").on('oTransitionEnd', function( event ) { 
-					alert( "Finished transition!" ); 
-				});
                 $rootScope.$on('$routeChangeStart', function (event, next) {
-                	console.log("start");
+                	$(".navbar li").removeClass("active");
+                	var href = next.originalPath ? "#" + next.originalPath : "#";
+            		$(".navbar li a[href='" + href + "']").parents("li").addClass("active");
                 });
-                $rootScope.$on('$locationChangeSuccess', function (event, next) {
-                	console.log("succes");
-                });
-                
         });
