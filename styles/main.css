@@ -39,13 +39,35 @@ body {
 	max-width: 600px;
 /*	color: #8c6e33;*/
 }
-.downloads {
-	font-size: 1em;
+
+.modal-header .close {
+	color: #ffffff;
+	font-size: 2em;
+	opacity: 1;
+}
+
+.subContent {
+	background: #f3f3f3;
+	margin-bottom: 10px;
+	border-radius: 5px;
+}
+
+.subContent h3 {
+	color: #ecf0f1;
+	margin: 0px;
+	border-radius: 5px 5px 0px 0px;
+	padding: 5px 10px;
+	font-size: 1.4em;
+}
+
+.subContent .subContentBody {
+	padding: 10px;
 }
 
 .downloads a {
 	margin-left: 20px;
 }
+
 .important {
 	font-weight: bold;
 	text-decoration: underline;
@@ -173,15 +195,15 @@ div[ng-view].ng-leave {
 	*/
 }
 
-.navbar-default, .panel-heading, .modal-header {
-  background: -webkit-linear-gradient(#d73146, #961d2c); /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(#d73146, #961d2c); /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(#d73146, #961d2c); /* For Firefox 3.6 to 15 */
-  background: linear-gradient(#d73146, #961d2c); /* Standard syntax */
+.navbar-default, .panel-heading, .modal-header, .subContent h3 {
+	background: -webkit-linear-gradient(#d73146, #961d2c); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(#d73146, #961d2c); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(#d73146, #961d2c); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(#d73146, #961d2c); /* Standard syntax */
 	border-color: #db542d;
 }
 
-.navbar-default .navbar-brand, .panel-heading .panel-title, .modal-header .modal-title {
+.navbar-default .navbar-brand, .panel-heading .panel-title, .modal-header .modal-title{
 	color: #ecf0f1;
 }
 .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
