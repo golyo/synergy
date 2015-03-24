@@ -17,32 +17,17 @@ jhipsterApp
                .when('/test', {
                     templateUrl: 'views/test.html',
                 })
-               .when('/creditPetition', {
-                    templateUrl: 'views/creditPetition.html'
+               .when('/firmClinic', {
+                    templateUrl: 'views/firmClinic.html'
                 })
-               .when('/firmInstitution', {
-                    templateUrl: 'views/firmInstitution.html'
+               .when('/firmEstimate', {
+                    templateUrl: 'views/firmEstimate.html'
                 })
                .when('/audit', {
                     templateUrl: 'views/audit.html'
                 })
-               .when('/consultancy', {
-                    templateUrl: 'views/consultancy.html'
-                })
                .when('/tender', {
                     templateUrl: 'views/tender.html'
-                })
-               .when('/training', {
-                    templateUrl: 'views/training.html'
-                })
-                .when('/estimate', {
-                    templateUrl: 'views/estimate.html'
-                })
-                .when('/referencies', {
-                    templateUrl: 'views/referencies.html'
-                })
-                .when('/actualCredit', {
-                    templateUrl: 'views/actualCredit.html'
                 })
                 .otherwise({
                     templateUrl: 'views/main.html',
